@@ -6,7 +6,7 @@ class Round {
     this.incorrectGuesses = []
   }
   returnCurrentCard() {
-    return this.deck[0];
+    return this.deck.cards[0];
   }
 
 }
