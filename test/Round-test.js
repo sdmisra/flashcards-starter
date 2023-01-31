@@ -25,9 +25,37 @@ describe('Round', function() {
     expect(round).to.be.an.instanceof(Round)
   })
 
-  it('should be able to return the current card being played', function() {
-    
+  it('should be able to return the current card being played in order', function(){
+
     expect(round.returnCurrentCard()).to.equal(card1)
   })
+  it('rewrite', function() {
+    expect(round.takeTurn('sea otter')).to.be.equal('correct!');
+    expect(round.takeTurn('spleen')).to.be.equal('incorrect!');
+    console.log(round.incorrectGuesses);
+  })
 
+/* Good stopping point for 1/30 ---> At this point, learning how to implement beforeEach will save me the trouble of "refilling" the resources of the game to keep trying new ways to manipulate things. The error being thrown below is: 
+
+1) Round
+incorrect guesses for future review:
+TypeError: Cannot read properties of undefined (reading 'correctAnswer')
+at Turn.evaluateGuess (src/Turn.js:13:53)
+at Turn.giveFeedback (src/Turn.js:16:17)
+at Round.takeTurn (src/Round.js:16:29)
+at Context.<anonymous> (test/Round-test.js:42:11)
+at processImmediate (node:internal/timers:466:21)
+*/
+
+
+
+
+
+
+
+
+  // it('should count wins on successful guesses or collect the ID number of incorrect guesses for future review', function() {
+  //   round.takeTurn('sea otter');
+  //   round.takeTurn('sea otter');
+  // })
 })
