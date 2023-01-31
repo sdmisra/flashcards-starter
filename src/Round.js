@@ -25,6 +25,12 @@ class Round {
       return 'incorrect!'
     }
   }
+  calculatePercentCorrect() {
+    return Math.round((this.wins / this.turns) *100);
+  }
+  endRound() {
+    
+  }
 }
 
 module.exports = Round;

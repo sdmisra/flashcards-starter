@@ -47,8 +47,11 @@ describe('Round', function() {
   at processImmediate (node:internal/timers:466:21)
   */
  
- // it('should be able to calculate the percentage of correct answers')(calculatepercentage)
- 
+ it('should be able to calculate the percentage of correct answers', function() {
+console.log('Test, you got a percentage of:', round.calculatePercentCorrect());
+
+ })
+
  // it('should end the round when the deck is empty, and then report the % of correct answers)
  //(endRound)
 
