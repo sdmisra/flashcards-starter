@@ -14,7 +14,8 @@ class Round {
     this.turns++;
     let thisTurn = new Turn(guess, this.deck.cards[0]);
     var feedback = thisTurn.giveFeedback();
-    if (feedback === 'correct!') {
+    console.log('Round 17', this.deck.cards.length);
+    if (feedback === 'correct') {
       this.deck.cards.shift();
       this.wins++;
       return 'correct!'
@@ -26,10 +27,11 @@ class Round {
     }
   }
   calculatePercentCorrect() {
+    console.log(this.wins, this.turns);
     return Math.round((this.wins / this.turns) *100);
   }
   endRound() {
-    
+    return `**Round Over!** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`;
   }
 }
 

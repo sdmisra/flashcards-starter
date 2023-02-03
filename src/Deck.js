@@ -1,6 +1,9 @@
+const data = require('./data')
+const cardDetails = data.prototypeData;
+
 class Deck {
-  constructor(cardsToAdd) {
-    this.cards = cardsToAdd;
+  constructor(cardDetails) {
+    this.cards = cardDetails;
   }
   countCards() {
     return this.cards.length

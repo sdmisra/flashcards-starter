@@ -51,7 +51,7 @@ When the game is functioning appropriately, you will be prompted for each questi
 ![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
 
 ---
-
+ 
 ## Test Files Organization
 
 Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
