@@ -8,12 +8,14 @@ This project was assigned to familiarize students with writing testing suites us
 ## Installation Instructions:
 [//]: <>
 1. Clone this repo to your local machine
+1. Within that newly created directory, run 'npm install' in terminal to install dependencies with Node Package Manager
+1. To see the project in action, use 'node index.js" to play the game in your terminal!
 
 ## Testing Instructions:
 [//]: <>
 
 To run the test suite associated with the classes behind the scenes and how they interact: 
-Run 'npm test' from the terminal while within the main directory of the application (Whats Cookin).
+Run 'npm test' from the terminal while within the main directory of the application (flashcards).
 
 
 ## Preview of App:
