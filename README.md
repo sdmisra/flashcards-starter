@@ -21,7 +21,6 @@ Run 'npm test' from the terminal while within the main directory of the applicat
 ## Preview of App:
 [//]: <>![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
 ## Context:
-[//]: <>
 This project was assigned in module 2 for the Frontend Program, this work was completed during the first week of that module.
 
 ## Contributors:
